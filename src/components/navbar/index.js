@@ -3,8 +3,19 @@ import './style.css';
 
 const Navbar = (props)=>{
 
+    const openMenu = ()=>{
+        //openMenu
+        document.querySelector('.navitems').classList.toggle('burgerClick');
+        //fadeIn nav items
+        document.querySelectorAll('.navitems li').forEach((element, index)=>{
+            if(!element.style.animation)
+                element.style.animation = `navitems-fadein 0.5s ease forwards ${0.4+index/7}s`;
+            else
+                element.style.animation = ``;
+        });
+    }
+
     window.addEventListener('scroll', ()=>{
-        console.log('here');
         var navbar = document.querySelector('.navbar');
         if(window.pageYOffset>=navbar.clientTop)
             navbar.classList.add("stick");
@@ -25,7 +36,7 @@ const Navbar = (props)=>{
                 <li>Skills</li>
                 <li>Contact</li>
             </ul>
-            <div className="burger">
+            <div className="burger" onClick={openMenu}>
                 <div></div>
                 <div></div>
                 <div></div>

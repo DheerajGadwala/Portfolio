@@ -2,6 +2,7 @@
     width: 100vw;
     height: 200vh;
     background:rgb(184, 184, 184);
+    overflow-x: hidden;
 }
 .stick + div{
     padding-top:15vh;
