@@ -9,6 +9,7 @@
     text-align: center;
     background-color: rgb(73, 73, 73);
     box-sizing: border-box;
+    border-radius: 10px;
 }
 .stick{
     position: fixed;
@@ -75,15 +76,17 @@
     }
     .navitems{
         position: absolute;
-        top: 15vh;
+        top: 16vh;
         right: 0;
-        height: 85vh;
-        width: 40%;
-        background-color: rgb(73, 73, 73);
+        height: 80vh;
+        width: 98%;
+        background-color: rgba(73, 73, 73, 0.9);
+        margin: 1vh 1vw 1vh 1vw;
         display: flex;
         flex-direction: column;
         transform: translateX(110%);
         transition: transform 0.3s ease-in;
+        border-radius: 10px;
     }
     .navitems li{
         opacity: 0;
@@ -119,15 +122,17 @@
     }
     .navitems{
         position: absolute;
-        top: 15vh;
+        top: 16vh;
         right: 0;
-        height: 85vh;
-        width: 50%;
-        background-color: rgb(73, 73, 73);
+        height: 80vh;
+        width: 98%;
+        background-color: rgba(73, 73, 73, 0.9);
+        margin: 1vh 1vw 1vh 1vw;
         display: flex;
         flex-direction: column;
         transform: translateX(110%);
         transition: transform 0.3s ease-in;
+        border-radius: 10px;
     }
     .navitems li{
         opacity: 0;

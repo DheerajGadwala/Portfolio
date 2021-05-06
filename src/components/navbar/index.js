@@ -9,7 +9,7 @@ const Navbar = (props)=>{
         //fadeIn nav items
         document.querySelectorAll('.navitems li').forEach((element, index)=>{
             if(!element.style.animation)
-                element.style.animation = `navitems-fadein 0.5s ease forwards ${0.4+index/7}s`;
+                element.style.animation = `navitems-fadein 0.5s ease forwards ${0.2+index/10}s`;
             else
                 element.style.animation = ``;
         });

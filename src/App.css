@@ -1,9 +1,15 @@
 .stagingArea{
-    width: 100vw;
+    width: 99.5vw;
     height: 200vh;
     background:rgb(184, 184, 184);
     overflow-x: hidden;
 }
 .stick + div{
-    padding-top:15vh;
+    padding-top:16vh;
+}
+.container{
+    display: inline-flex;
+    width: 99.5vw;
+    margin: 1vh 1vw 1vh 1vw;
+    
 }

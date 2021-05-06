@@ -1,0 +1,49 @@
+.typingAnimation{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    color: rgb(184, 184, 184);
+    background-color: rgb(114, 114, 114);
+    padding: 1vh 1vw 1vh 1vw;
+    margin: 1vh 1vw 1vh 1vw;
+    height: 50vh;
+    width: 44.75vw;
+}
+.animationArea{
+    position:unset;
+}
+.staticText{
+    color: rgb(255, 255, 255);
+    font-family:cursive;
+    font-weight: bold;
+    font-size:20px;
+}
+.changingText{
+    color: rgb(54, 136, 230);
+    font-weight: bold;
+    font-family:cursive;
+    font-size:30px;
+}
+.blinkingBar{
+    color: rgb(54, 136, 230);
+    font-weight: bold;
+    font-family:cursive;
+    font-size:30px;
+    position: relative;
+}
+@keyframes blinkIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes blinkOut {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity:0;
+    }
+}
