@@ -4,10 +4,11 @@
     justify-content:flex-start;
     color: rgb(184, 184, 184);
     background-color: rgb(0, 0, 0);
-    padding: 1vh 0vw 1vh 2vw;
-    margin: 1vh 1vw 1vh 1vw;
-    height: 20vh;
-    width: 44.75vw;
+    height: 18vh;
+    margin-bottom: max(2vh, 12px);
+    min-height: 108px;
+    width: 43vw;
+    padding-left: 2vw;
     border-radius: 10px;
 }
 .typingAnimation:hover{
@@ -54,7 +55,7 @@
 }
 @media screen and (max-width: 1000px){
     .typingAnimation{
-        width: 93.5vw;
+        width: 88vw;
     }
 }
 @media screen and (max-width: 500px){

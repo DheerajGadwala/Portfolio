@@ -1,0 +1,63 @@
+.EducationElement{
+    margin: 5vh 0vw 5vh 0vw;
+    height: 40vh;
+    width: 75vw;
+    min-width: 380px;
+    min-height: 300px;
+    display: inline-flex;
+    align-items: center;
+    background-color: rgb(53, 53, 53);
+    border-radius: 10px;
+}
+.EducationElement:hover{
+    box-shadow: 0 0 80px rgb(63, 63, 63);
+}
+.EducationElement div{
+    width: 75%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.EducationElement span{
+    text-align:center;
+    padding: 10px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-weight: bold;
+    font-family:Raleway;
+    color: rgb(128, 128, 128);
+    border-bottom: 2px solid rgb(73, 73, 73);
+    width: 90%;
+}
+.InstitutionName{
+    text-transform: uppercase;
+    color: rgb(219, 219, 219) !important;
+}
+.InstitutionImage{
+    height: 60%;
+    width: 20%;
+    min-width:140px;
+    min-height: 180px;
+    margin: 5%;
+    border-radius: 10px;
+}
+.lastElement{
+    border-bottom: none !important;
+}
+@media screen and (max-width: 850px){
+    .EducationElement{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80vh;
+        min-width: 300px;
+        min-height: 450px;
+    }
+    .InstitutionImage{
+        height: 30%;
+    }
+    .EducationElement div{
+        width: 100%;
+    }
+}

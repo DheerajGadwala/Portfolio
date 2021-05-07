@@ -1,32 +1,27 @@
 .IntroArea{
     display: flex;
     align-items:center;
+    flex-direction: column;
+    justify-content: space-around;
     color: rgb(184, 184, 184);
     background-color: rgb(0, 0, 0);
-    padding: 1vh 1vw 1vh 1vw;
-    margin: 1vh 1vw 1vh 1vw;
-    height: 77vh;
-    width: 44.75vw;
+    height: 80vh;
+    min-height: 480px;
+    width: 45vw;
     border-radius: 10px;
 }
 .IntroArea:hover{
     box-shadow: 0 0 11px rgba(0, 0, 0, 0.6);
 }
-.introList div{
+.introList{
     display: grid;
-    margin: 1vh 1vw 1vh 1vw;
-    padding: 1vh 5vw 1vh 5vw;
     color:rgb(219, 219, 219);
     letter-spacing: 2px;
     line-height: 30px;
     font-weight: 300;
     font-family:cursive;
     text-align:left;
-    border-bottom: 3px solid white;
     width: 32.75vw;
-}
-.lastElement{
-    border-bottom: none !important;
 }
 .heading{
     font-weight: 900 !important;
@@ -43,29 +38,39 @@ span a{
 span a:hover{
     color: rgb(150, 206, 48);
 }
+.introBar{
+    width: 80%;
+    height: 2px;
+    background-color: rgb(238, 237, 237);
+}
 @media screen and (max-width: 1370px){
-    .introList div{
+    .introList{
         font-size: 14px;
     }
 }
-@media screen and (max-width: 1100px){
-    .introList div{
-        font-size: 13px;
+@media screen and (max-width: 1200px){
+    .introList{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1060px){
+    .introList{
+        font-size: 11px;
     }
 }
 @media screen and (max-width: 1000px){
     .IntroArea{
-        width: 93.5vw;
+        width: 90vw;
     }
-    .introList div{
+    .introList{
         width: 81.5vw;
     }
-    .introList div{
+    .introList{
         font-size: 17px;
     }
 }
 @media screen and (max-width: 600px){
-    .introList div{
+    .introList{
         font-size: 15px;
     }
 }

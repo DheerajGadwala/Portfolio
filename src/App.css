@@ -1,33 +1,67 @@
-.stagingArea{
+/*Staging Area 1 starts here*/
+
+.stagingArea1{
     width: 99.5vw;
     height: 125vh;
+    min-height: 950px;
     background:rgb(184, 184, 184);
     overflow-x: hidden;
 }
 .stick + div{
-    padding-top:16vh;
+    padding-top: max(80px, 17vh);
 }
 .container{
     display: inline-flex;
+    justify-content: space-around;
     width: 99.5vw;
-    margin: 1vh 1vw 1vh 1vw;
     cursor: context-menu;
 }
+.part1{
+    height: 110vh;
+    min-height: 800px;
+}
 @media screen and (max-width: 1000px){
-    .stagingArea{
-        height: 230vh;
+    .stagingArea1{
+        height: 220vh;
+        min-height: 1300px;
     }
     .container{
-        display: inline-block;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:unset;
+    }
+    .part1{
+        height: 200vh;
+        min-height: 800px;
+    }
+    .homeSide2{
+        width: 90vw;
     }
 }
 @media screen and (max-width: 500px){
-    .stagingArea{
+    .stagingArea1{
         height: 250vh;
     }
 }
 @media screen and (max-width: 370px){
-    .stagingArea{
+    .stagingArea1{
         height: 280vh;
+    }
+}
+
+/*Staging Area 2 starts here*/
+
+.stagingArea2{
+    width: 99.5vw;
+    height: 210vh;
+    min-height: 1200px;
+    background:rgb(5, 134, 255);
+    overflow-x: hidden;
+}
+@media screen and (max-width: 850px){
+    .stagingArea2{
+        height: 300vh;
+        min-height: 1650px;
     }
 }

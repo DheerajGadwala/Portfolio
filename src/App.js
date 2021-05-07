@@ -3,6 +3,7 @@ import Navbar from './components/navbar';
 import TypingAnimation from './components/typingAnimation';
 import AboutMe from './components/aboutMe';
 import Intro from './components/intro';
+import EducationBlock from './components/education';
 import './App.css';
 
 const App = ()=>{
@@ -10,23 +11,21 @@ const App = ()=>{
 
     return (
         <>
-            <div className="stagingArea">
-                <Navbar>
-
-                </Navbar>
-                <div className="container">
+            <div className="stagingArea1">
+                <Navbar/>
+                <div className="container part1">
                     <div>
-                        <AboutMe>
-                        </AboutMe>
+                        <AboutMe/>
                     </div>
-                    <div>
-                        <TypingAnimation 
-                        animationItems = {animationItems}
-                        >
-                        </TypingAnimation>
-                        <Intro>
-                        </Intro>
+                    <div className="homeSide2">
+                        <TypingAnimation animationItems = {animationItems} />
+                        <Intro/>
                     </div>
+                </div>
+            </div>
+            <div className="stagingArea2">
+                <div className="container part2">
+                    <EducationBlock/>
                 </div>
             </div>
     </>
