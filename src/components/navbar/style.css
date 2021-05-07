@@ -10,6 +10,7 @@
     background-color: rgb(73, 73, 73);
     box-sizing: border-box;
     border-radius: 10px;
+    z-index: 3;
 }
 .stick{
     position: fixed;

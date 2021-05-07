@@ -1,8 +1,8 @@
 .IntroArea{
     display: flex;
-    justify-content:center;
+    align-items:center;
     color: rgb(184, 184, 184);
-    background-color: rgb(114, 114, 114);
+    background-color: rgb(0, 0, 0);
     padding: 1vh 1vw 1vh 1vw;
     margin: 1vh 1vw 1vh 1vw;
     height: 77vh;
@@ -10,10 +10,72 @@
     border-radius: 10px;
 }
 .IntroArea:hover{
-    box-shadow: 0 0 11px rgba(114, 114, 114, 0.6);
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.6);
+}
+.introList div{
+    display: grid;
+    margin: 1vh 1vw 1vh 1vw;
+    padding: 1vh 5vw 1vh 5vw;
+    color:rgb(219, 219, 219);
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-weight: 300;
+    font-family:cursive;
+    text-align:left;
+    border-bottom: 3px solid white;
+    width: 32.75vw;
+}
+.lastElement{
+    border-bottom: none !important;
+}
+.heading{
+    font-weight: 900 !important;
+    color: rgb(54, 136, 230);
+}
+span a{
+    text-decoration: none;
+    color: rgb(174, 190, 143);
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-weight: 300;
+    font-family:cursive;
+}
+span a:hover{
+    color: rgb(150, 206, 48);
+}
+@media screen and (max-width: 1370px){
+    .introList div{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .introList div{
+        font-size: 13px;
+    }
 }
 @media screen and (max-width: 1000px){
     .IntroArea{
         width: 93.5vw;
+    }
+    .introList div{
+        width: 81.5vw;
+    }
+    .introList div{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 600px){
+    .introList div{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 500px){
+    .IntroArea{
+        height: 97vh;
+    }
+}
+@media screen and (max-width: 370px){
+    .IntroArea{
+        height: 127vh;
     }
 }

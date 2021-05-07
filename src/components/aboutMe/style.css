@@ -15,9 +15,9 @@
     width: 32.75;
 }
 .aboutMeTitle{
-    height: 10vh;
+    height: 8vh;
     margin: 1vh 1vw 1vh 1vw;
-    padding: 1vh 5vw 1vh 5vw;
+    padding: 2vh 5vw 0vh 5vw;
     color:rgb(247, 245, 245);
     letter-spacing: 1px;
     font-weight: bold;
@@ -28,13 +28,13 @@
 .aboutMeText{
     height: 30vh;
     margin: 1vh 1vw 1vh 1vw;
-    padding: 1vh 5vw 1vh 5vw;
+    padding: 0 5vw 2vh 5vw;
     color:rgb(219, 219, 219);
     letter-spacing: 2px;
     line-height: 30px;
     font-weight: bold;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align:justify;
+    text-align:left;
 }
 .aboutMeArea:hover{
     box-shadow: 0 0 11px rgba(114, 114, 114, 0.6);
@@ -43,7 +43,7 @@
     width: 20vw;
     height: 50vh;
     border-radius: 50%;
-    padding: 1px;
+    margin: 1vh 0 1vh 0;
 }
 .myPic:hover{
     box-shadow: 0 0 11px rgba(73, 73, 73, 1);

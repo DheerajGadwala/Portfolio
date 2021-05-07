@@ -11,13 +11,23 @@
     display: inline-flex;
     width: 99.5vw;
     margin: 1vh 1vw 1vh 1vw;
-    
+    cursor: context-menu;
 }
 @media screen and (max-width: 1000px){
     .stagingArea{
-        height: 225vh;
+        height: 230vh;
     }
     .container{
         display: inline-block;
+    }
+}
+@media screen and (max-width: 500px){
+    .stagingArea{
+        height: 250vh;
+    }
+}
+@media screen and (max-width: 370px){
+    .stagingArea{
+        height: 280vh;
     }
 }

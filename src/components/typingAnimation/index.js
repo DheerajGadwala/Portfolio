@@ -18,7 +18,7 @@ const TypingAnimation = (props)=>{
         for(var j=0; j<props.animationItems.length; j++){
             var item = props.animationItems[j];
             var currState = [];
-            await delay(500);
+            await delay(100);
             for(var i=0; i<item.length; i++){
                 await delay(150);
                 currState.push(item.charAt(i));
