@@ -3,17 +3,21 @@
     align-items: center;
     justify-content:flex-start;
     color: rgb(184, 184, 184);
-    background-color: rgb(114, 114, 114);
+    background-color: rgb(0, 0, 0);
     padding: 1vh 1vw 1vh 1vw;
     margin: 1vh 1vw 1vh 1vw;
-    height: 50vh;
+    height: 20vh;
     width: 44.75vw;
+    border-radius: 10px;
+}
+.typingAnimation:hover{
+    box-shadow: 0 0 11px rgba(114, 114, 114, 0.6);
 }
 .animationArea{
     position:unset;
 }
 .staticText{
-    color: rgb(255, 255, 255);
+    color: rgb(150, 206, 48);
     font-family:cursive;
     font-weight: bold;
     font-size:20px;
@@ -25,7 +29,7 @@
     font-size:30px;
 }
 .blinkingBar{
-    color: rgb(54, 136, 230);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-family:cursive;
     font-size:30px;
@@ -45,5 +49,32 @@
     }
     to{
         opacity:0;
+    }
+}
+@media screen and (max-width: 1000px){
+    .typingAnimation{
+        width: 93.5vw;
+    }
+}
+@media screen and (max-width: 500px){
+    .staticText{
+        font-size:15px;
+    }
+    .changingText{
+        font-size:24px;
+    }
+    .blinkingBar{
+        font-size:24px;
+    }
+}
+@media screen and (max-width: 374px){
+    .staticText{
+        font-size:14px;
+    }
+    .changingText{
+        font-size:20px;
+    }
+    .blinkingBar{
+        font-size:20px;
     }
 }

@@ -1,6 +1,6 @@
 .stagingArea{
     width: 99.5vw;
-    height: 200vh;
+    height: 125vh;
     background:rgb(184, 184, 184);
     overflow-x: hidden;
 }
@@ -12,4 +12,12 @@
     width: 99.5vw;
     margin: 1vh 1vw 1vh 1vw;
     
+}
+@media screen and (max-width: 1000px){
+    .stagingArea{
+        height: 225vh;
+    }
+    .container{
+        display: inline-block;
+    }
 }

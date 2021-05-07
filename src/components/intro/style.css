@@ -1,0 +1,19 @@
+.IntroArea{
+    display: flex;
+    justify-content:center;
+    color: rgb(184, 184, 184);
+    background-color: rgb(114, 114, 114);
+    padding: 1vh 1vw 1vh 1vw;
+    margin: 1vh 1vw 1vh 1vw;
+    height: 77vh;
+    width: 44.75vw;
+    border-radius: 10px;
+}
+.IntroArea:hover{
+    box-shadow: 0 0 11px rgba(114, 114, 114, 0.6);
+}
+@media screen and (max-width: 1000px){
+    .IntroArea{
+        width: 93.5vw;
+    }
+}
