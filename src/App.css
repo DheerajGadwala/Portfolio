@@ -2,60 +2,48 @@
 
 .stagingArea1{
     width: 99.5vw;
-    height: max(125vh, 950px);
     background: linear-gradient(to bottom, rgb(122, 122, 122), rgb(184, 184, 184));
     overflow-x: hidden;
 }
-.container{
+.flexDirection{
     display: inline-flex;
     justify-content: space-around;
+}
+/*Staging Area 2 starts here*/
+
+.stagingArea2{
+    width: 99.5vw;
+    background: linear-gradient(to bottom, rgb(5, 134, 255), rgb(61, 161, 255));
+    overflow-x: hidden;
+}
+
+/*Staging Area 3 starts here*/
+
+.stagingArea3{
+    width: 99.5vw;
+    background: linear-gradient(to bottom, rgb(255, 31, 31), rgb(255, 105, 105));
+    overflow-x: hidden;
+}
+
+/*Container, same for each staging area*/
+
+.container{
     width: 99.5vw;
     cursor: context-menu;
     padding-top: max(80px, 17vh);
-}
-.part1{
-    height: max(110vh, 800px);
+    padding-bottom: max(30px, 7vh);
 }
 
+/*Others*/
+
 @media screen and (max-width: 1000px){
-    .stagingArea1{
-        height: max(220vh, 1350px);
-    }
-    .container{
+    .flexDirection{
         display: inline-flex;
         flex-direction: column;
         align-items: center;
         justify-content:unset;
     }
-    .part1{
-        height: 200vh;
-        min-height: 800px;
-    }
     .homeSide2{
         width: 90vw;
-    }
-}
-@media screen and (max-width: 500px){
-    .stagingArea1{
-        height: 250vh;
-    }
-}
-@media screen and (max-width: 370px){
-    .stagingArea1{
-        height: 280vh;
-    }
-}
-
-/*Staging Area 2 starts here*/
-
-.stagingArea2{
-    width: 99.5vw;
-    height: max(167vh, 1150px);
-    background: linear-gradient(to bottom, rgb(5, 134, 255), rgb(61, 161, 255));
-    overflow-x: hidden;
-}
-@media screen and (max-width: 850px){
-    .stagingArea2{
-        height: max(287vh, 1750px);
     }
 }

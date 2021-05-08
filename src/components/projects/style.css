@@ -1,0 +1,12 @@
+.ProjectArea{
+    width: 99.5vw;
+}
+.ProjectsTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 max(5vh, 25px) 0;
+    color: rgb(247, 245, 245);
+    letter-spacing: 1px;
+    font-family: Raleway;
+}

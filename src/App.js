@@ -4,6 +4,7 @@ import TypingAnimation from './components/typingAnimation';
 import AboutMe from './components/aboutMe';
 import Intro from './components/intro';
 import EducationBlock from './components/education';
+import Projects from './components/projects';
 import './App.css';
 
 const App = ()=>{
@@ -13,7 +14,7 @@ const App = ()=>{
         <>
             <div className="stagingArea1">
                 <Navbar/>
-                <div className="container part1">
+                <div className="container flexDirection">
                     <div>
                         <AboutMe/>
                     </div>
@@ -24,8 +25,13 @@ const App = ()=>{
                 </div>
             </div>
             <div className="stagingArea2">
-                <div className="container part2">
+                <div className="container">
                     <EducationBlock/>
+                </div>
+            </div>
+            <div className="stagingArea3">
+                <div className="container">
+                    <Projects/>
                 </div>
             </div>
     </>

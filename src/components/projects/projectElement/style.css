@@ -1,0 +1,85 @@
+.ProjectElement{
+    display: inline-block;
+    height: max(50vh, 300px);
+}
+.ProjectElement div{
+    width: max(39.75vw, 300px);
+    margin: max(5vh, 25px) 5vw min(5vh, 25px) 5vw;
+    height: max(40vh, 250px);
+    background: linear-gradient(to bottom right, rgb(160, 9, 9), rgb(161, 45, 45));
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 0 rgb(110, 28, 28);
+    box-shadow: 2px 2px 0 rgb(110, 28, 28);
+}
+.ProjectElement div:hover{
+    box-shadow: 1px 1px 0 rgb(110, 28, 28);
+    box-shadow: 2px 2px 0 rgb(110, 28, 28);
+    box-shadow: 3px 3px 0 rgb(110, 28, 28);
+    box-shadow: 4px 4px 0 rgb(110, 28, 28);
+    box-shadow: 5px 5px 0 rgb(110, 28, 28);
+    box-shadow: 6px 6px 0 rgb(110, 28, 28);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.ProjectTitle{
+    margin: max(1vh, 5px) auto max(1vh, 5px) auto;
+    color:rgb(219, 219, 219);
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-weight: bold;
+    font-family:cursive;
+    height: 15%;
+}
+.ProjectDescription{
+    color:rgb(219, 219, 219);
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-weight: 300;
+    font-size: 14px;
+    font-family:cursive;
+    margin: max(1vh, 5px) 3vw max(1vh, 5px) 3vw;
+    height: 60%;
+}
+.ProjectsIcon{
+    height: 30px;
+    width: 30px;
+}
+.ProjectLinks{
+    height: 25%;
+    display:flex;
+    justify-content:space-around;
+}
+.ProjectLinks a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    display: flex;
+}
+.ProjectLinks a:hover{
+    color: rgb(53, 53, 53);
+}
+.ProjectBar{
+    margin: max(1vh, 5px) auto max(1vh, 5px) auto;
+    width: 75%;
+    height: 1.5px;
+    background-color: rgb(255, 255, 255);
+}
+@media only screen and (max-width: 850px){
+    .ProjectElement div{
+        width: max(89.5vw, 320px);
+        margin: max(5vh, 25px) max(5vw, 18px) max(5vh, 25px) max(5vw, 18px);
+    }
+}
+@media only screen and (max-width: 500px){
+    .ProjectElement{
+        height: max(70vh, 350px);
+    }
+    .ProjectElement div{
+        height: max(60vh, 300px);
+    }
+}
+@media only screen and (max-width: 350px){
+    .ProjectElement div{
+        width: max(97.5vw, 320px);
+        margin: max(5vh, 25px) max(1vw, 3.2px) max(5vh, 25px) max(1vw, 3.2px);
+    }
+}

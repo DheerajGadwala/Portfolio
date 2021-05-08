@@ -11,7 +11,7 @@ const EducationBlock = ()=>{
 
     ret.push(
         <div key="0" className="EducationTitle">
-            Education
+            <h2>Education</h2>
         </div>
     );
     ret.push(<EducationElement 
@@ -44,6 +44,8 @@ const EducationBlock = ()=>{
         Image={jgs}
         key="3"
         />);
+
+        /*Make changes in style.css if you add more education elements*/
 
     return(
         <div className = "EducationArea">
