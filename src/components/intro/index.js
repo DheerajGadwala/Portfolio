@@ -11,7 +11,7 @@ const Intro = ()=>{
             <div className="introBar"></div>
             <div className="introList">
                 <span className="heading">What have I done so far?</span>
-                <span> I have learned quite a few programming languages, developed some basic <a href="https://github.com/DheerajGadwala">projects</a>, and learned efficient and effective <a href="https://www.hackerrank.com/drgad24">programming</a>.</span>
+                <span> I have learned quite a few programming languages, developed some basic <a href="https://github.com/DheerajGadwala">projects</a>, and mastered efficient and effective <a href="https://www.hackerrank.com/drgad24">programming</a>.</span>
             </div>
             <div className="introBar"></div>
             <div className="introList">

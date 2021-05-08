@@ -1,16 +1,21 @@
 .EducationElement{
     margin: max(5vh, 30px) 0vw max(5vh, 30px) 0vw;
     height: max(40vh, 240px);
-    width: 75vw;
+    width: 65vw;
     min-width: 380px;
     display: inline-flex;
     align-items: center;
-    background-color: rgb(53, 53, 53);
-    background: linear-gradient(to right, rgb(53, 53, 53), rgb(63, 63, 63));
-    border-radius: 5px;
+    background-color: rgb(187, 48, 45);
+    box-shadow: 1px 1px 0 rgb(69, 97, 99);
+    box-shadow: 2px 2px 0 rgb(69, 97, 99);
 }
 .EducationElement:hover{
-    box-shadow: 0 0 40px rgb(66, 66, 66);
+    box-shadow: 1px 1px 0 rgb(69, 97, 99);
+    box-shadow: 2px 2px 0 rgb(69, 97, 99);
+    box-shadow: 3px 3px 0 rgb(69, 97, 99);
+    box-shadow: 4px 4px 0 rgb(69, 97, 99);
+    box-shadow: 4px 5px 0 rgb(69, 97, 99);
+    box-shadow: 4px 6px 0 rgb(69, 97, 99);
     transition: box-shadow 0.3s ease-in-out;
 }
 .EducationElement div{
@@ -27,13 +32,13 @@
     line-height: 30px;
     font-weight: bold;
     font-family:Raleway;
-    color: rgb(128, 128, 128);
-    border-bottom: 2px solid rgb(73, 73, 73);
+    color: rgb(245, 245, 245);
+    border-bottom: 2px solid rgb(236, 236, 236);
     width: 90%;
 }
 .InstitutionName{
     text-transform: uppercase;
-    color: rgb(219, 219, 219) !important;
+    color: rgb(240, 240, 240) !important;
 }
 .InstitutionImage{
     height: 60%;
@@ -41,6 +46,7 @@
     min-width:140px;
     min-height: 180px;
     margin: 5%;
+    box-shadow: 0 0 10px rgb(207, 207, 207);
 }
 .lastElement{
     border-bottom: none !important;
@@ -51,6 +57,7 @@
         flex-direction: column;
         justify-content: center;
         height: max(80vh, 440px);
+        width: 50vw;
         margin: max(5vh, 30px) 0vw max(5vh, 30px) 0vw;
         min-width: 300px;
     }

@@ -12,12 +12,11 @@
     font-family:Raleway;
     font-size: 1.5em;
     text-align:justify;
-    margin-bottom: max(7vh, 30px);
 }
 .EducationBar{
     width: 15%;
-    height: 2px;
-    background-color: rgb(221, 221, 221);
+    height: 1.5px;
+    background-color: rgb(187, 48, 45);
 }
 @media screen and (max-width:850px){
     .EducationArea{

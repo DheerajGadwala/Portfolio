@@ -12,7 +12,8 @@
     border-radius: 10px;
 }
 .typingAnimation:hover{
-    box-shadow: 0 0 11px rgba(114, 114, 114, 0.6);
+    box-shadow: 0 0 11px rgb(0, 0, 0);
+    transition: box-shadow 0.5s ease-in-out;
 }
 .animationArea{
     position:unset;

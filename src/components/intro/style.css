@@ -11,7 +11,8 @@
     border-radius: 10px;
 }
 .IntroArea:hover{
-    box-shadow: 0 0 11px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 11px rgb(0, 0, 0);
+    transition: box-shadow 0.5s ease-in-out;
 }
 .introList{
     display: grid;
