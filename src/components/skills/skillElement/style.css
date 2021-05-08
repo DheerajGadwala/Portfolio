@@ -1,0 +1,29 @@
+.skillItem{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin: 20px 5px 20px 5px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 30px;
+    background-color: rgb(5, 134, 255);   
+}
+.skillItem:hover{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.skillItem div{
+    display: flex;
+    align-items: center;
+}
+.skillIcon{
+    height: 30px;
+    width: 30px;
+    padding: 2px 2px 2px 2px;
+    margin: 2px 2px 2px 2px;
+    background-color:rgb(224, 224, 224);
+    border-radius: 30px;
+}
+.skillName{
+    padding: 2px 2px 2px 2px;
+    margin: 2px 2px 2px 2px;
+}

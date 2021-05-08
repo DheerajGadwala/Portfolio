@@ -5,6 +5,7 @@ import AboutMe from './components/aboutMe';
 import Intro from './components/intro';
 import EducationBlock from './components/education';
 import Projects from './components/projects';
+import Skills from './components/skills';
 import './App.css';
 
 const App = ()=>{
@@ -32,6 +33,15 @@ const App = ()=>{
             <div className="stagingArea3">
                 <div className="container">
                     <Projects/>
+                </div>
+            </div>
+            <div className="stagingArea4">
+                <div className="container">
+                    <Skills/>
+                </div>
+            </div>
+            <div className="stagingArea5">
+                <div className="container">
                 </div>
             </div>
     </>

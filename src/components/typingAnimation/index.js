@@ -20,7 +20,7 @@ const TypingAnimation = (props)=>{
             var currState = [];
             await delay(100);
             for(var i=0; i<item.length; i++){
-                await delay(150);
+                await delay(200);
                 currState.push(item.charAt(i));
                 setDisplay([...currState]);
             }

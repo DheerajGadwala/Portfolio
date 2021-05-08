@@ -3,7 +3,7 @@
     align-items: center;
     justify-content:flex-start;
     color: rgb(184, 184, 184);
-    background-color: rgb(0, 0, 0);
+    background: linear-gradient(to bottom left, rgb(0, 0, 0), rgb(46, 46, 46));
     height: 18vh;
     margin-bottom: max(2vh, 12px);
     min-height: 108px;
@@ -31,7 +31,7 @@
     font-size:30px;
 }
 .blinkingBar{
-    color: rgb(150, 206, 48);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-family:cursive;
     font-size:30px;

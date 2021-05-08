@@ -25,6 +25,14 @@
     overflow-x: hidden;
 }
 
+/*Staging Area 4 starts here*/
+
+.stagingArea4{
+    width: 99.5vw;
+    background-color:rgb(66, 66, 66);
+    overflow-x: hidden;
+}
+
 /*Container, same for each staging area*/
 
 .container{
