@@ -3,7 +3,7 @@
 .stagingArea1{
     width: 99.5vw;
     height: max(125vh, 950px);
-    background:rgb(184, 184, 184);
+    background: linear-gradient(to bottom, rgb(122, 122, 122), rgb(184, 184, 184));
     overflow-x: hidden;
 }
 .container{
@@ -51,7 +51,7 @@
 .stagingArea2{
     width: 99.5vw;
     height: max(167vh, 1150px);
-    background:rgb(5, 134, 255);
+    background: linear-gradient(to bottom, rgb(5, 134, 255), rgb(61, 161, 255));
     overflow-x: hidden;
 }
 @media screen and (max-width: 850px){
