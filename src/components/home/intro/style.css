@@ -75,13 +75,13 @@ span a:hover{
         font-size: 15px;
     }
 }
-@media screen and (max-width: 500px){
-    .IntroArea{
-        height: 97vh;
-    }
-}
-@media screen and (max-width: 370px){
+@media screen and (max-width: 550px){
     .IntroArea{
         height: 127vh;
+    }
+}
+@media screen and (max-width: 350px){
+    .IntroArea{
+        height: 147vh;
     }
 }

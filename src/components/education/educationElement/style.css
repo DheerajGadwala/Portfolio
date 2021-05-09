@@ -6,7 +6,7 @@
     display: inline-flex;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(to bottom right, rgb(17, 81, 155), rgb(53, 91, 134));
+    background: linear-gradient(to bottom right, rgb(17, 81, 155), rgb(76, 104, 136));
     box-shadow: 1px 1px 0 rgb(8, 33, 61);
     box-shadow: 2px 2px 0 rgb(8, 33, 61);
 }

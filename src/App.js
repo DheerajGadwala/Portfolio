@@ -1,28 +1,19 @@
 import React from 'react';
 import Navbar from './components/navbar';
-import TypingAnimation from './components/typingAnimation';
-import AboutMe from './components/aboutMe';
-import Intro from './components/intro';
+import Home from './components/home';
 import EducationBlock from './components/education';
 import Projects from './components/projects';
 import Skills from './components/skills';
 import './App.css';
 
 const App = ()=>{
-    const [animationItems, setAnimationItems] = React.useState(['a tech enthusiast', 'a full-stack developer', 'a free spirit',  'a gamer', 'a react Developer', 'a humanist', 'a programmer', 'a history nerd', 'a dreamer']);
-
+    
     return (
         <>
+            <Navbar/>
             <div className="stagingArea1">
-                <Navbar/>
                 <div className="container flexDirection">
-                    <div>
-                        <AboutMe/>
-                    </div>
-                    <div className="homeSide2">
-                        <TypingAnimation animationItems = {animationItems} />
-                        <Intro/>
-                    </div>
+                    <Home/>
                 </div>
             </div>
             <div className="stagingArea2">
