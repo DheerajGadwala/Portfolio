@@ -1,0 +1,173 @@
+.contactMeArea{
+    width: 70vw;
+    margin: 0 15vw 0 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.contactMeTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    font-family: Raleway;
+}
+.contactMeTitle h2{
+    text-align: center;
+}
+.infoForm{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.inputText, .inputTextArea{
+    margin: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+.inputText{
+    position: relative;
+}
+.infoForm input{
+    border: none;
+    outline: none;
+    background-color: rgb(245, 245, 245);
+    font-size: 18px;
+    border-bottom: 1px solid black;
+    transition: all 0.2s ease-in-out;
+}
+.inputTextLabel{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    bottom:0px;
+    left:0px;
+    font-family: cursive;
+    font-size: 18px;
+    pointer-events: none;
+}
+.inputTextLabel span{
+    position:absolute;
+    bottom:20px;
+    left:7px;
+    transition: all 0.2s ease-in-out;
+}
+.inputText input:focus + .inputTextLabel span, .inputText input:valid + .inputTextLabel span{
+    bottom:45px;
+    left: 0px;
+    font-weight: bold;
+    font-size: 12px;
+    transition: all 0.2s ease-in-out;
+}
+.inputText input:focus{
+    border-bottom: 3px solid;
+    transition: all 0.2s ease-in-out;
+}
+.infoForm textarea{
+    border: none;
+    outline: none;
+    background-color: rgb(235, 235, 235);
+    border-bottom: 1px solid black;
+    font-size: 16px;
+    resize: none;
+    height: 70px;
+    transition: all 0.2s ease-in-out;
+}
+.inputTextArea{
+    position: relative;
+}
+.inputTextAreaLabel{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    bottom:0px;
+    left:0px;
+    font-family: cursive;
+    font-size: 18px;
+    pointer-events: none;
+}
+.inputTextAreaLabel span{
+    position:absolute;
+    top: 0px;
+    left: 7px;
+    transition: all 0.2s ease-in-out;
+}
+.inputTextArea textarea:focus + .inputTextAreaLabel span, .inputTextArea textarea:valid + .inputTextAreaLabel span{
+    top: -25px;
+    left: 0px;
+    font-weight: bold;
+    font-size: 12px;
+    transition: all 0.2s ease-in-out;
+}
+.inputTextArea textarea:focus{
+    border-bottom: 3px solid;
+    transition: all 0.2s ease-in-out;
+}
+.sendButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: max(5vh, 25px) 0 0 0;
+    height: 40px;
+    background-color: royalblue;
+    color: rgb(235, 235, 235);
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgb(75, 75, 75);
+    transition: all 0.5s ease-in-out;
+}
+.sendButton:hover{
+    box-shadow: 0 0 6px rgb(75, 75, 75);
+    background-color: rgb(49, 75, 155);
+    transition: all 0.5s ease-in-out;
+}
+.contactMeIcons{
+    width: 70%;;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 15vh 0;
+}
+.contactMeIcons a img{
+    width: 30px;
+    height: 30px;
+    transform:rotate(0deg);
+    transition: transform 1s ease-in-out;
+}
+.contactMeIcons a img:hover{
+    transform:rotate(360deg);
+    transition: transform 1s ease-in-out;
+}
+.error{
+    height: 20px;
+    font-size: 12px;
+    font-family: cursive;
+    color: rgb(255, 91, 91);
+    transition: all 0.2s ease-in-out;
+}
+.errorInputs{
+    border-bottom-color: rgb(255, 124, 124) !important;
+    transition: all 0.2s ease-in-out;
+}
+.errorLabel{
+    color: rgb(247, 47, 47);
+    transition: all 0.1s ease-in-out;
+}
+.errorTextArea{
+    border-color: rgb(255, 124, 124) !important;
+    transition: all 0.1s ease-in-out;
+}
+@media screen and (max-width: 850px){
+    .contactMeArea{
+        width: 90vw;
+        margin: 0 5vw 0 5vw;
+    }
+}
+@media screen and (max-width: 450px){
+    .infoForm{
+        width: 80%;
+    }
+}

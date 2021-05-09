@@ -4,6 +4,7 @@ import Home from './components/home';
 import EducationBlock from './components/education';
 import Projects from './components/projects';
 import Skills from './components/skills';
+import ContactMe from './components/contactMe';
 import './App.css';
 
 const App = ()=>{
@@ -33,6 +34,7 @@ const App = ()=>{
             </div>
             <div className="stagingArea5">
                 <div className="container">
+                    <ContactMe/>
                 </div>
             </div>
     </>
