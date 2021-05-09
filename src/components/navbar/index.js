@@ -25,7 +25,7 @@ const Navbar = (props)=>{
 
     return(
         <>
-        <div className="navbar">
+        <div className="navbar stick">
             <div className="name">
                 <span>Dheeraj Gadwala</span>
             </div>

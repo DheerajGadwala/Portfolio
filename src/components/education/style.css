@@ -1,6 +1,5 @@
 .EducationArea{
-    height: max(150vh, 1000px); /*50 vh per element, 300px per element*/
-    width: 97.5vw;
+    width: 99.5vw;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -15,11 +14,6 @@
 }
 .EducationBar{
     width: 15%;
-    height: 1.5px;
-    background-color: rgb(187, 48, 45);
-}
-@media screen and (max-width:850px){
-    .EducationArea{
-        height: max(270vh, 1600px); /*90 vh per element, 500px per element*/
-    }
+    height: min(1.5px, 1vh);
+    background-color: rgb(30, 78, 133);
 }
