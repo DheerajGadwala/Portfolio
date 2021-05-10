@@ -58,12 +58,16 @@ const TypingAnimation = (props)=>{
     return(
         <>
             <div className="typingAnimation">
-                <span className="staticText">
+                <span className="totalText">
                     Who am I?&nbsp;
-                <span className="animationArea">
-                    <span className="changingText">{generateDisplay()}</span>
-                    <span className = "blinkingBar">|</span>
-                </span>
+                    <span className="animationArea">
+                        <span className="changingText">
+                            {generateDisplay()}
+                        </span>
+                        <span className = "blinkingBar">
+                            |
+                        </span>
+                    </span>
                 </span>
             </div>
         </>

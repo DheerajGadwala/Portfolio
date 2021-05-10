@@ -27,7 +27,7 @@ const App = ()=>{
                 scrollToRef={scrollToRef}
             />
             <div className="stagingArea1" ref={aboutMeRef}>
-                <div className="container flexDirection">
+                <div className="container">
                     <Home/>
                 </div>
             </div>

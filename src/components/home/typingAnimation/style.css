@@ -2,13 +2,10 @@
     display: flex;
     align-items: center;
     justify-content:flex-start;
-    color: rgb(184, 184, 184);
     background: linear-gradient(to bottom left, rgb(0, 0, 0), rgb(46, 46, 46));
-    height: 18vh;
-    margin-bottom: max(2vh, 12px);
-    min-height: 108px;
-    width: 43vw;
-    padding-left: 2vw;
+    height: max(18vh, 108px) !important;
+    margin-bottom:max(2vh, 12px);
+    width: 100%;
     border-radius: 10px;
 }
 .typingAnimation:hover{
@@ -18,11 +15,12 @@
 .animationArea{
     position:unset;
 }
-.staticText{
+.totalText{
     color: rgb(150, 206, 48);
     font-family: lato;
     font-weight: bold;
     font-size:20px;
+    margin: 0 10% 0 10%;
 }
 .changingText{
     color: rgb(54, 136, 230);
@@ -52,32 +50,5 @@
     }
     to{
         opacity:0;
-    }
-}
-@media screen and (max-width: 1000px){
-    .typingAnimation{
-        width: 88vw;
-    }
-}
-@media screen and (max-width: 500px){
-    .staticText{
-        font-size:15px;
-    }
-    .changingText{
-        font-size:24px;
-    }
-    .blinkingBar{
-        font-size:24px;
-    }
-}
-@media screen and (max-width: 374px){
-    .staticText{
-        font-size:14px;
-    }
-    .changingText{
-        font-size:20px;
-    }
-    .blinkingBar{
-        font-size:20px;
     }
 }

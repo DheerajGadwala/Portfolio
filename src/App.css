@@ -5,10 +5,6 @@
     background: linear-gradient(to bottom, rgb(104, 104, 104), rgb(184, 184, 184));
     overflow-x: hidden;
 }
-.flexDirection{
-    display: inline-flex;
-    justify-content: space-around;
-}
 /*Staging Area 2 starts here*/
 
 .stagingArea2{
@@ -48,18 +44,4 @@
     cursor: context-menu;
     padding-top: max(80px, 17vh);
     padding-bottom: max(30px, 7vh);
-}
-
-/*Others*/
-
-@media screen and (max-width: 1000px){
-    .flexDirection{
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content:unset;
-    }
-    .homeSide2{
-        width: 90vw;
-    }
 }

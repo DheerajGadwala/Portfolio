@@ -10,12 +10,14 @@ const Home = ()=>{
 
     return (
         <>
-            <div>
-                <AboutMe/>
-            </div>
-            <div className="homeSide2">
-                <TypingAnimation animationItems = {animationItems} />
-                <Intro/>
+            <div className="home">
+                <div className="homePart1">
+                    <AboutMe/>
+                </div>
+                <div className="homePart2">
+                    <TypingAnimation animationItems = {animationItems} />
+                    <Intro/>
+                </div>
             </div>
         </>
     );
