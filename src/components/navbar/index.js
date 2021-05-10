@@ -1,7 +1,24 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import './style.css';
 
 const Navbar = (props)=>{
+
+
+    const scrollAboutMe = ()=>{
+        props.scrollToRef(props.aboutMeRef);
+    }
+    const scrollEducation = ()=>{
+        props.scrollToRef(props.educationRef);
+    }
+    const scrollProjects = ()=>{
+        props.scrollToRef(props.projectsRef);
+    }
+    const scrollSkills = ()=>{
+        props.scrollToRef(props.skillsRef);
+    }
+    const scrollContactMe = ()=>{
+        props.scrollToRef(props.contactMeRef);
+    }
 
     const openMenu = ()=>{
         //openMenu
@@ -30,11 +47,11 @@ const Navbar = (props)=>{
                 <span>Dheeraj Gadwala</span>
             </div>
             <ul className="navitems">
-                <li>About Me</li>
-                <li>Education</li>
-                <li>Projects</li>
-                <li>Skills</li>
-                <li>Contact</li>
+                <li onClick={scrollAboutMe}>About Me</li>
+                <li onClick={scrollEducation}>Education</li>
+                <li onClick={scrollProjects}>Projects</li>
+                <li onClick={scrollSkills}>Skills</li>
+                <li onClick={scrollContactMe}>Contact</li>
             </ul>
             <div className="burger" onClick={openMenu}>
                 <div></div>
