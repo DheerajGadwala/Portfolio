@@ -6,7 +6,7 @@
     width: max(39.75vw, 300px);
     margin: max(5vh, 25px) 5vw min(5vh, 25px) 5vw;
     height: max(40vh, 250px);
-    background: linear-gradient(to bottom right, rgb(160, 9, 9), rgb(204, 71, 71));
+    background: linear-gradient(to bottom right, rgb(172, 80, 80), rgb(204, 71, 71));
     display: flex;
     flex-direction: column;
     box-shadow: 1px 1px 0 rgb(110, 28, 28);
@@ -27,7 +27,7 @@
     letter-spacing: 2px;
     line-height: 30px;
     font-weight: bold;
-    font-family:cursive;
+    font-family: lato;
     height: 15%;
 }
 .ProjectDescription{
@@ -36,7 +36,7 @@
     line-height: 30px;
     font-weight: 300;
     font-size: 14px;
-    font-family:cursive;
+    font-family: lato;
     margin: max(1vh, 5px) 3vw max(1vh, 5px) 3vw;
     height: 60%;
 }
@@ -50,12 +50,12 @@
     justify-content:space-around;
 }
 .ProjectLinks a{
-    color: rgb(0, 0, 0);
+    color: rgb(219, 219, 219);
     font-weight: bold;
     display: flex;
 }
 .ProjectLinks a:hover{
-    color: rgb(53, 53, 53);
+    color: rgb(104, 0, 0);
 }
 .ProjectBar{
     margin: max(1vh, 5px) auto max(1vh, 5px) auto;

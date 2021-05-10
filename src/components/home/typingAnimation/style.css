@@ -20,20 +20,20 @@
 }
 .staticText{
     color: rgb(150, 206, 48);
-    font-family:cursive;
+    font-family: lato;
     font-weight: bold;
     font-size:20px;
 }
 .changingText{
     color: rgb(54, 136, 230);
     font-weight: bold;
-    font-family:cursive;
+    font-family: lato;
     font-size:30px;
 }
 .blinkingBar{
     color: rgb(255, 255, 255);
     font-weight: bold;
-    font-family:cursive;
+    font-family: lato;
     font-size:30px;
     position: relative;
     z-index: 2;

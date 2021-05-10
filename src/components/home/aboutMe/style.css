@@ -25,12 +25,12 @@
 .aboutMeText{
     height: 30vh;
     min-height: 180px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 40px 0px 40px;
     color:rgb(219, 219, 219);
     letter-spacing: 2px;
     line-height: 30px;
-    font-weight: bold;
-    font-family:cursive;
+    font-weight: 300;
+    font-family:lato;
     text-align:left;
 }
 .aboutMeArea:hover{
@@ -82,9 +82,17 @@
         height: 50vh;
     }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     .aboutMeText{
-        line-height: 21px;
-        font-weight: 600;
+        font-size: 12px;
+        line-height: 25px;
+        font-weight: 300;
+    }
+}
+@media screen and (max-width: 370px){
+    .aboutMeText{
+        font-size: 10px;
+        line-height: 20px;
+        font-weight: 300;
     }
 }

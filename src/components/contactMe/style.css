@@ -47,7 +47,7 @@
     height: 100%;
     bottom:0px;
     left:0px;
-    font-family: cursive;
+    font-family: lato;
     font-size: 18px;
     pointer-events: none;
 }
@@ -96,7 +96,7 @@
     height: 100%;
     bottom:0px;
     left:0px;
-    font-family: cursive;
+    font-family: lato;
     font-size: 18px;
     pointer-events: none;
 }
@@ -163,7 +163,7 @@
 .error{
     height: 20px;
     font-size: 12px;
-    font-family: cursive;
+    font-family: lato;
     color: rgb(255, 91, 91) !important;
     transition: all 0.2s ease-in-out;
 }
@@ -175,7 +175,7 @@
     color: rgb(247, 47, 47) !important;
     transition: all 0.1s ease-in-out;
 }
-.inputTextArea textarea:focus + .errorLabel span{
+.inputTextArea textarea:focus + .errorLabel span, .inputTextArea textarea:valid + .errorLabel span{
     top: -25px;
     left: 0px;
     font-weight: bold;
@@ -183,7 +183,7 @@
     color: rgb(247, 47, 47) !important;
     transition: all 0.2s ease-in-out;
 }
-.inputText input:focus + .errorLabel span{
+.inputText input:focus + .errorLabel span, .inputText input:valid + .errorLabel span{
     bottom:45px;
     left: 0px;
     color: rgb(247, 47, 47) !important;
@@ -214,7 +214,7 @@
     transition: box-shadow 0.3s ease-in-out;
 }
 .confirmationMessage{
-    font-family: cursive;
+    font-family: lato;
     font-size: 18px;
     text-align: center;
 }

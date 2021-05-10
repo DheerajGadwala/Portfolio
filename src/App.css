@@ -2,7 +2,7 @@
 
 .stagingArea1{
     width: 99.5vw;
-    background: linear-gradient(to bottom, rgb(122, 122, 122), rgb(184, 184, 184));
+    background: linear-gradient(to bottom, rgb(104, 104, 104), rgb(184, 184, 184));
     overflow-x: hidden;
 }
 .flexDirection{
@@ -13,7 +13,7 @@
 
 .stagingArea2{
     width: 99.5vw;
-    background: linear-gradient(to bottom right, rgb(55, 159, 167), rgb(129, 107, 74));
+    background: linear-gradient(to bottom, rgb(241, 217, 171), rgb(230, 218, 198));
     overflow-x: hidden;
 }
 
@@ -21,7 +21,7 @@
 
 .stagingArea3{
     width: 99.5vw;
-    background: linear-gradient(to bottom, rgb(255, 31, 31), rgb(255, 105, 105));
+    background: linear-gradient(to bottom right, rgb(55, 159, 167), rgb(139, 195, 199));
     overflow-x: hidden;
 }
 

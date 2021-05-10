@@ -23,7 +23,7 @@
     width: 40%;
 }
 .name span{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:lato;
     font-weight: 900;
     color:rgb(190, 190, 190);
     text-transform:uppercase;
@@ -45,6 +45,7 @@
     font-weight: 600;
     color:rgb(190, 190, 190);
     letter-spacing: 1px;
+    user-select: none;
 }
 .navitems li:hover{
     color:rgb(230, 231, 231);
@@ -52,6 +53,7 @@
 .burger{
     display: none;
     cursor:pointer;
+    user-select: none;
 }
 .burger div{
     width: 25px;

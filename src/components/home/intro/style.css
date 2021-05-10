@@ -2,7 +2,7 @@
     display: flex;
     align-items:center;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: rgb(184, 184, 184);
     background: linear-gradient(to bottom left, rgb(0, 0, 0), rgb(46, 46, 46));
     height: 80vh;
@@ -15,12 +15,14 @@
     transition: box-shadow 0.5s ease-in-out;
 }
 .introList{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     color:rgb(219, 219, 219);
     letter-spacing: 2px;
     line-height: 30px;
     font-weight: 300;
-    font-family:cursive;
+    font-family: lato;
     text-align:left;
     width: 32.75vw;
 }
@@ -34,7 +36,7 @@ span a{
     letter-spacing: 2px;
     line-height: 30px;
     font-weight: 300;
-    font-family:cursive;
+    font-family:lato;
 }
 span a:hover{
     color: rgb(150, 206, 48);
