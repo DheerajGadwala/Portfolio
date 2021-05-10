@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from './components/navbar';
 import Home from './components/home';
 import EducationBlock from './components/education';
@@ -8,7 +8,7 @@ import ContactMe from './components/contactMe';
 import './App.css';
 
 const App = ()=>{
-    
+
     return (
         <>
             <Navbar/>

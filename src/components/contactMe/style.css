@@ -23,6 +23,7 @@
     display: flex;
     flex-direction: column;
     width: 60%;
+    height: 420px;
 }
 .inputText, .inputTextArea{
     margin: 40px 0 0 0;
@@ -35,7 +36,7 @@
 .infoForm input{
     border: none;
     outline: none;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(255, 255, 255);
     font-size: 18px;
     border-bottom: 1px solid black;
     transition: all 0.2s ease-in-out;
@@ -56,15 +57,24 @@
     left:7px;
     transition: all 0.2s ease-in-out;
 }
-.inputText input:focus + .inputTextLabel span, .inputText input:valid + .inputTextLabel span{
+.inputText input:focus + .inputTextLabel span{
     bottom:45px;
     left: 0px;
+    color: royalblue !important;
+    font-weight: bold;
+    font-size: 12px;
+    transition: all 0.2s ease-in-out;
+}
+.inputText input:valid + .inputTextLabel span{
+    bottom:45px;
+    left: 0px;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 12px;
     transition: all 0.2s ease-in-out;
 }
 .inputText input:focus{
-    border-bottom: 3px solid;
+    border-bottom: 3px solid royalblue;
     transition: all 0.2s ease-in-out;
 }
 .infoForm textarea{
@@ -96,15 +106,24 @@
     left: 7px;
     transition: all 0.2s ease-in-out;
 }
-.inputTextArea textarea:focus + .inputTextAreaLabel span, .inputTextArea textarea:valid + .inputTextAreaLabel span{
+.inputTextArea textarea:focus + .inputTextAreaLabel span{
     top: -25px;
     left: 0px;
     font-weight: bold;
     font-size: 12px;
+    color:royalblue !important;
+    transition: all 0.2s ease-in-out;
+}
+.inputTextArea textarea:valid + .inputTextAreaLabel span{
+    top: -25px;
+    left: 0px;
+    font-weight: bold;
+    font-size: 12px;
+    color:rgb(0, 0, 0);
     transition: all 0.2s ease-in-out;
 }
 .inputTextArea textarea:focus{
-    border-bottom: 3px solid;
+    border-bottom: 3px solid royalblue;
     transition: all 0.2s ease-in-out;
 }
 .sendButton{
@@ -145,7 +164,7 @@
     height: 20px;
     font-size: 12px;
     font-family: cursive;
-    color: rgb(255, 91, 91);
+    color: rgb(255, 91, 91) !important;
     transition: all 0.2s ease-in-out;
 }
 .errorInputs{
@@ -153,13 +172,84 @@
     transition: all 0.2s ease-in-out;
 }
 .errorLabel{
-    color: rgb(247, 47, 47);
+    color: rgb(247, 47, 47) !important;
     transition: all 0.1s ease-in-out;
+}
+.inputTextArea textarea:focus + .errorLabel span{
+    top: -25px;
+    left: 0px;
+    font-weight: bold;
+    font-size: 12px;
+    color: rgb(247, 47, 47) !important;
+    transition: all 0.2s ease-in-out;
+}
+.inputText input:focus + .errorLabel span{
+    bottom:45px;
+    left: 0px;
+    color: rgb(247, 47, 47) !important;
+    font-weight: bold;
+    font-size: 12px;
+    transition: all 0.2s ease-in-out;
+}
+.sendingMail{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    height: 420px;
+    align-items: center;
+}
+.mailSentConfirmation{
+    width: 60%;
+    height: 420px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    background-color: rgb(214, 214, 214);
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgb(122, 122, 122);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.mailSentConfirmation:hover{
+    box-shadow: 0 0 7px rgb(122, 122, 122);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.confirmationMessage{
+    font-family: cursive;
+    font-size: 18px;
+    text-align: center;
+}
+.mailSentConfirmation div{
+    width: 80%;
+    margin: 10% 10% 10% 10%;
+}
+.okButton{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    height: 40px;
+    width: 60%;
+    margin: max(5vh, 25px) 20% 0 20%;
+    background-color: royalblue;
+    color: rgb(235, 235, 235);
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgb(75, 75, 75);
+    transition: all 0.5s ease-in-out;
+}
+.okButton:hover{
+    box-shadow: 0 0 6px rgb(75, 75, 75);
+    background-color: rgb(49, 75, 155);
+    transition: all 0.5s ease-in-out;
 }
 @media screen and (max-width: 850px){
     .contactMeArea{
         width: 90vw;
         margin: 0 5vw 0 5vw;
+    }
+}
+@media screen and (max-width: 600px){
+    .mailSentConfirmation{
+        width: 90%;
     }
 }
 @media screen and (max-width: 450px){
