@@ -7,7 +7,7 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    background-color: rgb(73, 73, 73);
+    background-color: #132c33;
     box-sizing: border-box;
     border-radius: 10px;
     z-index: 3;
@@ -38,7 +38,7 @@
     justify-content:space-around;
     align-items: center;
     list-style-type: none;
-    color:rgb(190, 190, 190);
+    color:rgb(212, 236, 162);
 }
 .navitems li{
     cursor:pointer;
@@ -98,7 +98,7 @@
         right: 0;
         height: 80vh;
         width: 98%;
-        background-color: rgba(73, 73, 73, 0.9);
+        background-color: rgba(19, 44, 51, 0.7);
         margin: 1vh 1vw 1vh 1vw;
         display: flex;
         flex-direction: column;

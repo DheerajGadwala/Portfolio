@@ -199,12 +199,12 @@
     width: 100%;
     display:flex;
     justify-content:center;
-    height: 420px;
+    height: 70%;
     align-items: center;
 }
 .mailSentConfirmation{
     width: 60%;
-    height: 420px;
+    height: 70%;
     display:flex;
     flex-direction: column;
     justify-content:space-around;
