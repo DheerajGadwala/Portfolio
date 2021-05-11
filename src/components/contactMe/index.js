@@ -88,7 +88,7 @@ const ContactMe = ()=>{
         <div className="contactMeArea">
             <div className="contactMeTitle">
                 <h2>
-                    Wanna reach out to me?
+                    Contact Me
                 </h2>
             </div>
             <div className="sendingMail" style={{display: loading?'':'none'}}>

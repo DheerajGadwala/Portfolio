@@ -2,7 +2,7 @@
 
 .stagingArea1{
     width: 99.5vw;
-    background: linear-gradient(to bottom, rgb(104, 104, 104), rgb(184, 184, 184));
+    background: linear-gradient(to bottom, #d8e3e7, #d8e3e7);
     overflow-x: hidden;
 }
 /*Staging Area 2 starts here*/

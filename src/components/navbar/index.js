@@ -2,7 +2,60 @@ import React, {useRef} from 'react';
 import './style.css';
 
 const Navbar = (props)=>{
+    
+    const navBarRef = useRef(null);
 
+    const removeOthers = ()=>{
+        var element = document.querySelector('.navitems');
+        if(element.classList.contains('navitemsContactMe'))
+            document.querySelector('.navitems').classList.remove('navitemsContactMe');
+        if(element.classList.contains('navitemsSkills'))
+            document.querySelector('.navitems').classList.remove('navitemsSkills');
+        if(element.classList.contains('navitemsProjects'))
+            document.querySelector('.navitems').classList.remove('navitemsProjects');
+        if(element.classList.contains('navitemsEducation'))
+            document.querySelector('.navitems').classList.remove('navitemsEducation');
+        if(element.classList.contains('navitemsAboutMe'))
+            document.querySelector('.navitems').classList.remove('navitemsAboutMe');
+    }
+
+    window.addEventListener('scroll', ()=>{
+        if(window.scrollY>=props.contactMeRef.current.offsetTop-10){
+            document.querySelector('.navbar').style.background="rgb(0, 0, 0)";
+            document.querySelector('.navitems').style.color="rgb(215, 215, 215)";
+            document.querySelector('.navitems').style.background="rgba(0, 0, 0, 0.7)";
+            removeOthers();
+            document.querySelector('.navitems').classList.add('navitemsContactMe');
+        }
+        else if(window.scrollY>=props.skillsRef.current.offsetTop-10){
+            document.querySelector('.navbar').style.background="rgb(5, 134, 255)";
+            document.querySelector('.navitems').style.color="rgb(225, 225, 225)";
+            document.querySelector('.navitems').style.background="rgba(5, 134, 255, 0.7)";
+            removeOthers();
+            document.querySelector('.navitems').classList.add('navitemsSkills');
+        }
+        else if(window.scrollY>=props.projectsRef.current.offsetTop-10){
+            document.querySelector('.navbar').style.background="rgb(172, 80, 80)";
+            document.querySelector('.navitems').style.color="rgb(219, 219, 219)";
+            document.querySelector('.navitems').style.background="rgba(172, 80, 80, 0.7)";
+            removeOthers();
+            document.querySelector('.navitems').classList.add('navitemsProjects');
+        }
+        else if(window.scrollY>=props.educationRef.current.offsetTop-10){
+            document.querySelector('.navbar').style.background="rgb(17, 81, 155)";
+            document.querySelector('.navitems').style.color="rgb(255, 255, 255)";
+            document.querySelector('.navitems').style.background="rgba(17, 81, 155, 0.7)";
+            removeOthers();
+            document.querySelector('.navitems').classList.add('navitemsEducation');
+        }
+        else{
+            document.querySelector('.navbar').style.background="#132c33";
+            document.querySelector('.navitems').style.color="rgb(212, 236, 162)";
+            document.querySelector('.navitems').style.background="rgba(19, 44, 51, 0.7)";
+            removeOthers();
+            document.querySelector('.navitems').classList.add('navitemsAboutMe');
+        }
+    });
 
     const scrollAboutMe = ()=>{
         props.scrollToRef(props.aboutMeRef);
@@ -42,7 +95,7 @@ const Navbar = (props)=>{
 
     return(
         <>
-        <div className="navbar stick">
+        <div className="navbar stick" ref={navBarRef}>
             <div className="name">
                 <span>Dheeraj Gadwala</span>
             </div>

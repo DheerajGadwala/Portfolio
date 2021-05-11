@@ -21,11 +21,11 @@
     align-items:center;
     justify-content:center;
     width: 40%;
+    color:rgb(255, 255, 255);
 }
 .name span{
     font-family:lato;
     font-weight: 900;
-    color:rgb(190, 190, 190);
     text-transform:uppercase;
     letter-spacing: 12px;
     cursor:context-menu;
@@ -38,14 +38,29 @@
     justify-content:space-around;
     align-items: center;
     list-style-type: none;
+    color:rgb(190, 190, 190);
 }
 .navitems li{
     cursor:pointer;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 600;
-    color:rgb(190, 190, 190);
     letter-spacing: 1px;
     user-select: none;
+}
+.navitemsAboutMe li:hover{
+    color:rgb(105, 153, 17) !important;
+}
+.navitemsEducation li:hover{
+    color:rgb(241, 217, 171) !important;
+}
+.navitemsProjects li:hover{
+    color:rgb(74, 191, 199) !important;
+}
+.navitemsSkills li:hover{
+    color:rgb(66, 66, 66) !important;
+}
+.navitemsContactMe li:hover{
+    color:rgb(255, 255, 255) !important;
 }
 .navitems li:hover{
     color:rgb(230, 231, 231);
@@ -58,7 +73,7 @@
 .burger div{
     width: 25px;
     height: 4px;
-    background-color: rgb(184, 184, 184);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     margin: 5px 0 5px 0;
 }

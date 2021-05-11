@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content:flex-start;
-    background: linear-gradient(to bottom left, rgb(0, 0, 0), rgb(46, 46, 46));
+    background: linear-gradient(to bottom right, #132c33, #132c33);
     height: max(18vh, 108px) !important;
     margin-bottom:max(2vh, 12px);
     width: 100%;

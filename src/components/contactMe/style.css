@@ -1,20 +1,23 @@
 .contactMeArea{
     width: 70vw;
     margin: 0 15vw 0 15vw;
+    height: max(84vh, 600px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
 .contactMeTitle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 2.5% 0 2.5% 0;
+    height: 10%;
     width: 100%;
     font-size: 1.5em;
     color: rgb(0, 0, 0);
     letter-spacing: 1px;
     font-family: Raleway;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 .contactMeTitle h2{
     text-align: center;
@@ -23,10 +26,10 @@
     display: flex;
     flex-direction: column;
     width: 60%;
-    height: 420px;
+    height: 70%;
 }
 .inputText, .inputTextArea{
-    margin: 40px 0 0 0;
+    margin: 5% 0 0 0;
     display: flex;
     flex-direction: column;
 }
@@ -145,7 +148,8 @@
     transition: all 0.5s ease-in-out;
 }
 .contactMeIcons{
-    width: 70%;;
+    width: 70%;
+    height: 15%;
     display: flex;
     justify-content: space-around;
     margin: 20px 0 15vh 0;
