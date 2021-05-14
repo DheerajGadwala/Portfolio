@@ -8,16 +8,6 @@ const Projects = ()=>{
     
     n = Math.floor((n+1)/2)*2;
 
-    const [hval, sethval] = React.useState(0+"px");
-
-    useEffect(() => {
-        sethval(window.innerWidth>850?100*n/4+5:100*n/2+5);
-    })
-
-    window.addEventListener('resize', ()=>{
-        sethval(window.innerWidth>850?100*n/4+5:100*n/2+5);
-    })
-
     const generateArea = ()=>{
         var ret = [];
         ret.push(
