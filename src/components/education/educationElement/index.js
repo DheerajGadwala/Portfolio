@@ -4,7 +4,7 @@ import './style.css';
 
 const EducationElement = (props)=>{
     return(
-        <div className="EducationElement">
+        <div className="EducationElement" ref = {props.refs[props.id]}>
             <div className="EducationPrime">
                 <div className="ElementLeft">
                     <div className="InstitutionName">{props.Name}</div>

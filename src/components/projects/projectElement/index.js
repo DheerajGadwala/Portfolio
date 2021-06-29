@@ -15,7 +15,7 @@ const ProjectElement = (props)=>{
         links= (<span className="ProjectLinks"></span>);
     return (
         <>
-            <div className="ProjectElement">
+            <div className={props.id%2==0?"ProjectElement leftProjectElement":"ProjectElement rightProjectElement"} ref = {props.refs[props.id]}>
                 <div>
                     <span className="ProjectTitle">{props.Title}</span>
                     <span className="ProjectBar"></span>

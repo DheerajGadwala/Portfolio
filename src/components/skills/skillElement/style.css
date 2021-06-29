@@ -1,32 +1,58 @@
-.skillItem{
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-    margin: 20px 5px 20px 5px;
-    padding: 5px 5px 5px 5px;
-    border-radius: 30px;
-    background-color: rgb(5, 134, 255);   
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+.skillItem {
+  opacity: 0;
+  transform: scale(0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 5px 20px 5px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 30px;
+  background-color: rgb(5, 134, 255);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
 }
-.skillItem:hover{
-    box-shadow: 0 14px 10px rgba(0, 0, 0, 0.7);
-    transition: box-shadow 0.3s ease-in-out;
+.skillItemVisibility {
+  opacity: 1;
+  transform: scale(1);
 }
-.skillItem div{
-    display: flex;
-    align-items: center;
+.skillItem:hover {
+  box-shadow: 0 14px 10px rgba(0, 0, 0, 0.7);
+  transition: box-shadow 0.3s ease-in-out;
 }
-.skillIcon{
-    height: 30px;
-    width: 30px;
-    padding: 2px 2px 2px 2px;
-    margin: 2px 2px 2px 2px;
-    background-color:rgb(224, 224, 224);
-    border-radius: 30px;
+.skillItem div {
+  display: flex;
+  align-items: center;
 }
-.skillName{
-    padding: 2px 2px 2px 2px;
-    margin: 2px 2px 2px 2px;
-    font-family: lato;
-    color: rgb(255, 255, 255);
+.skillIcon {
+  height: 30px;
+  width: 30px;
+  padding: 2px 2px 2px 2px;
+  margin: 2px 2px 2px 2px;
+  background-color: rgb(224, 224, 224);
+  border-radius: 30px;
+}
+.skillName {
+  padding: 2px 2px 2px 2px;
+  margin: 2px 2px 2px 2px;
+  font-family: lato;
+  color: rgb(255, 255, 255);
+}
+@keyframes skillItem-fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes skillItem-fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.7);
+  }
 }
