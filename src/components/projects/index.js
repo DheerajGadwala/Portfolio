@@ -5,67 +5,70 @@ import ProjectElement from './projectElement';
 const Projects = ()=>{
 
     const [ret, setRet] = useState(``);
-    const [refs, setRefs] = useState([useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)]);
+    const [refs, setRefs] = useState([useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)]);
+    // add 1 useRef(null) for every project;
+    const Projects = [
+        [
+            "Sorting Visualizer", 
+            "A visualization tool for six sorting algorithms {bubble, insertion, selection, merge, heap, and quick sorts} using HTML, CSS and, javascript.", 
+            "https://github.com/DheerajGadwala/sorting-visualizer", 
+            "https://dheerajgadwala.github.io/sorting-visualizer/"
+        ],
+        [
+            "Notepad Web Application",
+            "A notepad application that uses reactjs and firebase's Backend as a Service [BaaS] tools namely auth and firestore.",
+            "https://github.com/DheerajGadwala/Notepad_gfb",
+            "https://notepad-1ddc2.firebaseapp.com/"
+        ],
+        [
+            "Identify DAPP",
+            "A DAPP hosted on a private Ethereum network created using Hyperledger Besu. It can be used for authentication and authorization processes in Indian PDSs. For more information, read the github description.",
+            "https://github.com/DheerajGadwala/Identify",
+            ""
+        ],
+        [
+            "Notepad DAPP",
+            "A notepad DAPP that uses reactjs and solidity. It is deployed on Ethereum's kovan test network. Add, move, delete and search for notes.",
+            "https://github.com/DheerajGadwala/Notepad_DAPP",
+            "https://www.dheerajgadwala.tech/Notepad_DAPP/"
+        ],
+        [
+            "Portfolio Website",
+            "Portfolio website using react js.",
+            "https://github.com/DheerajGadwala/PortfolioOld",
+            "https://drgad24.s3.ap-south-1.amazonaws.com/index.html"
+        ],
+        [
+            "Responsive Website building",
+            "includes an animated navigation bar, a courosell, smooth scrolling, animations on scrolling.",
+            "https://github.com/DheerajGadwala/Responsive-Website-Building",
+            ""
+        ],
+        [
+            "Social Networking Website",
+            "A Social Networking website on PHP, HTML and CSS and MYSQL.",
+            "https://github.com/DheerajGadwala/SocialNetworkingWebsite",
+            ""
+        ]
+    ];
 
     useEffect(() =>{
+        let i = 0;
         let ret = [];
-        ret.push(
-            <ProjectElement
-                id="0"
-                key="1"
-                Title = "Sorting Visualizer"
-                Explanation = "A visualization tool for six sorting algorithms {bubble, insertion, selection, merge, heap, and quick sorts} using HTML, CSS and, javascript."
-                GitHubLink = "https://github.com/DheerajGadwala/sorting-visualizer"
-                Link= "https://dheerajgadwala.github.io/sorting-visualizer/"
+        while(i<Projects.length){
+            ret.push(
+                <ProjectElement
+                id={i.toString()}
+                key={(i+1).toString()}
+                Title = {Projects[i][0]}
+                Explanation = {Projects[i][1]}
+                GitHubLink = {Projects[i][2]}
+                Link= {Projects[i][3]}
                 refs = {refs}            
-            />
-        );
-        ret.push(
-            <ProjectElement
-                id="1"
-                key="2"
-                Title = "Portfolio Website"
-                Explanation = "Portfolio website using react js."
-                GitHubLink = "https://github.com/DheerajGadwala/PortfolioOld"
-                Link= "https://drgad24.s3.ap-south-1.amazonaws.com/index.html"
-                refs = {refs}            
-            />
-        );
-        ret.push(
-            <ProjectElement
-                id="2"
-                key="3"
-                Title = "Responsive Website building"
-                Explanation = "includes an animated navigation bar, a courosell, smooth scrolling, animations on scrolling."
-                GitHubLink = "https://github.com/DheerajGadwala/Responsive-Website-Building"
-                Link= ""
-                refs = {refs}            
-            />
-        );
-        ret.push(
-            <ProjectElement
-                id="3"
-                key="4"
-                Title = "Social Networking Website"
-                Explanation = "A Social Networking website on PHP, HTML and CSS and MYSQL."
-                GitHubLink = "https://github.com/DheerajGadwala/SocialNetworkingWebsite"
-                Link= ""
-                refs = {refs}            
-            />
-        
-        );
-        ret.push(
-            <ProjectElement
-                id="4"
-                key="5"
-                Title = "Identify"
-                Explanation = "A DAPP for authentication and authorization processes in Indian PDSs, further explained on github."
-                GitHubLink = "https://github.com/DheerajGadwala/Identify"
-                Link= ""
-                refs = {refs}            
-            />
-        
-        );
+                />
+            );
+            i++;
+        }
         setRet(ret);
 
         let prevScroll = window.innerHeight;

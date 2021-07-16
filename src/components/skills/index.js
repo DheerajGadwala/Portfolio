@@ -16,7 +16,7 @@ import Trilingual  from './images/Trilingual.png';
 import Synergetic from './images/Synergetic.png';
 import TeamManagement from './images/Team Management.png';
 import DAPPS from './images/DAPPS.png';
-import Blockchain from './images/Blockchain.png';
+import Firebase from './images/firebase.png';
 
 
 const Skills = ()=>{
@@ -25,8 +25,8 @@ const Skills = ()=>{
     const [refs, setRefs] = useState([useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)]);
 
     useEffect(()=>{
-        let skills = ["Python3", "Java", "Data Structures and Algorithms", "Blockchain","React JS", "Node JS", "Vanilla JS", "PHP", "SQL", "REST API", "DAPPS", "HTML", "CSS", "Trilingual", "Synergetic", "Team Management"];
-        let skillImages = [Python3, Java, DSA, Blockchain, ReactJS, NodeJS, VanillaJS, PHP, SQL, RESTAPI, DAPPS, HTML , CSS, Trilingual , Synergetic, TeamManagement];
+        let skills = ["Python3", "Java", "Data Structures and Algorithms","React JS", "Node JS", "Vanilla JS", "PHP", "SQL", "REST API", "DAPPS", "Firebase", "HTML", "CSS", "Trilingual", "Synergetic", "Team Management"];
+        let skillImages = [Python3, Java, DSA, ReactJS, NodeJS, VanillaJS, PHP, SQL, RESTAPI, DAPPS, Firebase, HTML , CSS, Trilingual , Synergetic, TeamManagement];
         let ret = [];
         
         for(var i=0; i<skills.length; i++){

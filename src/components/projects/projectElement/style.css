@@ -1,6 +1,6 @@
 .ProjectElement {
   display: inline-block;
-  height: max(50vh, 300px);
+  height: auto;
 }
 .leftProjectElement {
   opacity: 0;
@@ -17,7 +17,7 @@
 .ProjectElement div {
   width: max(39.75vw, 300px);
   margin: max(5vh, 25px) 5vw min(5vh, 25px) 5vw;
-  height: max(40vh, 250px);
+  height: auto;
   background: linear-gradient(
     to bottom right,
     rgb(172, 80, 80),
