@@ -133,14 +133,6 @@
     margin: max(5vh, 25px) max(5vw, 18px) max(5vh, 25px) max(5vw, 18px);
   }
 }
-@media only screen and (max-width: 500px) {
-  .ProjectElement {
-    height: max(70vh, 350px);
-  }
-  .ProjectElement div {
-    height: max(60vh, 300px);
-  }
-}
 @media only screen and (max-width: 350px) {
   .ProjectElement div {
     width: max(97.5vw, 320px);

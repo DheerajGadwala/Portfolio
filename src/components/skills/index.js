@@ -31,10 +31,8 @@ const Skills = ()=>{
         
         for(var i=0; i<skills.length; i++){
             ret.push(<SkillsElement key={i} id={i} refs={refs} skill={skills[i]} icon={skillImages[i]}/>);
-            console.log(refs);
         }
         setRet(ret);
-        console.log(refs);
 
         let prevScroll = window.innerHeight;
         window.addEventListener('scroll', ()=>{
