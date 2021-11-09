@@ -1,19 +1,19 @@
-.EducationArea{
-    width: 99.5vw;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
+.EducationArea {
+  width: 99.5vw;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
 }
-.EducationTitle{
-    color:rgb(70, 70, 70);
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-family:Raleway;
-    font-size: 1.5em;
-    text-align:justify;
+.EducationTitle {
+  color: rgb(184, 96, 14);
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: Raleway;
+  font-size: 1.5em;
+  text-align: justify;
 }
-.EducationBar{
-    width: 15%;
-    height: min(1.5px, 1vh);
-    background-color: rgb(30, 78, 133);
+.EducationBar {
+  width: 15%;
+  height: min(1.5px, 1vh);
+  background-color: rgb(184, 96, 14);
 }

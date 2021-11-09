@@ -5,7 +5,13 @@ import ProjectElement from './projectElement';
 const Projects = ()=>{
 
     const [ret, setRet] = useState(``);
-    const [refs, setRefs] = useState([useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)]);
+    const [refs, setRefs] = useState(
+        [
+            useRef(null), useRef(null), useRef(null), 
+            useRef(null), useRef(null), useRef(null), 
+            useRef(null), useRef(null), useRef(null), 
+        ]
+        );
     // add 1 useRef(null) for every project;
     const Projects = [
         [
@@ -18,12 +24,18 @@ const Projects = ()=>{
             "Notepad Web Application",
             "A notepad application that uses reactjs and firebase's Backend as a Service [BaaS] tools namely auth and firestore.",
             "https://github.com/DheerajGadwala/Notepad_gfb",
-            "https://notepad-1ddc2.firebaseapp.com/"
+            "https://notepad.dheerajgadwala.tech/"
         ],
         [
             "Identify DAPP",
             "A DAPP hosted on a private Ethereum network created using Hyperledger Besu. It can be used for authentication and authorization processes in Indian PDSs. For more information, read the github description.",
             "https://github.com/DheerajGadwala/Identify",
+            ""
+        ],
+        [
+            "Dungeon",
+            "A command line game where a player can move through a dungeon, which is an implementation of a graph data structure. The dungeon is generated randomly. We use various graph algorithms like Kruskals Algorithm and customized BFS algorithm.",
+            "",
             ""
         ],
         [
@@ -48,6 +60,12 @@ const Projects = ()=>{
             "Social Networking Website",
             "A Social Networking website on PHP, HTML and CSS and MYSQL.",
             "https://github.com/DheerajGadwala/SocialNetworkingWebsite",
+            ""
+        ],
+        [
+            "Sign-up and Sign-in in React Native",
+            "A demo app that uses React Native and Firebase auth for login and sign-up functionalities. Login using google and facebook is available. Users can change password via email link.",
+            "https://github.com/DheerajGadwala/AuthorizationInReactNative",
             ""
         ]
     ];

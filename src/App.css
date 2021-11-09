@@ -1,47 +1,55 @@
 /*Staging Area 1 starts here*/
 
-.stagingArea1{
-    width: 99.5vw;
-    background: linear-gradient(to bottom, #d8e3e7, #d8e3e7);
-    overflow-x: hidden;
+.stagingArea1 {
+  width: 99.5vw;
+  background: linear-gradient(to bottom, #d8e3e7, #d8e3e7);
+  overflow-x: hidden;
 }
 /*Staging Area 2 starts here*/
 
-.stagingArea2{
-    width: 99.5vw;
-    background: linear-gradient(to bottom, rgb(241, 217, 171), rgb(230, 218, 198));
-    overflow-x: hidden;
+.stagingArea2 {
+  width: 99.5vw;
+  background: linear-gradient(
+    to bottom,
+    rgb(238, 207, 150),
+    rgb(221, 204, 176)
+  );
+  overflow-x: hidden;
 }
 
 /*Staging Area 3 starts here*/
 
-.stagingArea3{
-    width: 99.5vw;
-    background: linear-gradient(to bottom right, rgb(55, 159, 167), rgb(139, 195, 199));
-    overflow-x: hidden;
+.stagingArea3 {
+  width: 99.5vw;
+  background: linear-gradient(
+    to bottom right,
+    rgb(55, 159, 167),
+    rgb(139, 195, 199)
+  );
+  overflow-x: hidden;
 }
 
 /*Staging Area 4 starts here*/
 
-.stagingArea4{
-    width: 99.5vw;
-    background-color:rgb(66, 66, 66);
-    overflow-x: hidden;
+.stagingArea4 {
+  width: 99.5vw;
+  background-color: rgb(66, 66, 66);
+  overflow-x: hidden;
 }
 
 /*Staging Area 4 starts here*/
 
-.stagingArea5{
-    width: 99.5vw;
-    background-color:rgb(255, 255, 255);
-    overflow-x: hidden;
+.stagingArea5 {
+  width: 99.5vw;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
 }
 
 /*Container, same for each staging area*/
 
-.container{
-    width: 99.5vw;
-    cursor: context-menu;
-    padding-top: max(80px, 17vh);
-    padding-bottom: max(30px, 7vh);
+.container {
+  width: 99.5vw;
+  cursor: context-menu;
+  padding-top: max(80px, 17vh);
+  padding-bottom: max(30px, 7vh);
 }

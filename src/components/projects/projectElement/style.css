@@ -40,7 +40,7 @@
 .ProjectTitle {
   display: flex;
   align-items: center;
-  margin: max(1vh, 5px) auto max(1vh, 5px) auto;
+  margin: max(1vh, 15px) auto max(1vh, 5px) auto;
   color: rgb(219, 219, 219);
   letter-spacing: 2px;
   line-height: 30px;
@@ -58,7 +58,7 @@
   font-weight: 300;
   font-size: 14px;
   font-family: lato;
-  margin: max(1vh, 5px) 3vw max(1vh, 5px) 3vw;
+  margin: max(1vh, 5px) max(3vw, 12.5%) max(1vh, 5px) max(3vw, 12.5%);
   height: 60%;
 }
 .ProjectsIcon {
@@ -67,7 +67,7 @@
 }
 .ProjectLinks {
   height: 20%;
-  margin: 2.5% 0 2.5% 0;
+  margin: max(2.5%, 20px) 0 max(2.5%, 20px) 0;
   display: flex;
   justify-content: space-around;
 }
