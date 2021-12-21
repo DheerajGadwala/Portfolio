@@ -17,7 +17,7 @@ const EducationBlock = ()=>{
         ret.push(<EducationElement 
             Name="Northeastern University, Khoury College of Computer Sciences"
             Level="MSc in Computer Science"
-            Score="CGPA: 0.00/4.00"
+            Score="CGPA: 4.00/4.00"
             Year="2021-present"
             MapsLink="https://goo.gl/maps/9oAZtUsMsB1UFwFP7"
             key="1"
