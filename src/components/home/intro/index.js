@@ -6,7 +6,7 @@ const Intro = ()=>{
         <div className="IntroArea">
             <div className="introList">
                 <span className="heading">My background</span>
-                <span className="introListText"> Graduated from <a href="https://vit.ac.in/">Vellore Institute of technology (VIT)</a> at Vellore, India with a baccalaureate degree in technology specializing in Computer Science and Engineering. </span>      
+                <span className="introListText">I'm currently pursuing my MS in Computer Science at Northeastern University, Boston with a focus on Software Engineering and Data Science.</span>      
             </div>
             <div className="introBar"></div>
             <div className="introList">
