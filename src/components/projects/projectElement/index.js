@@ -6,11 +6,11 @@ import linkIcon from './Images/link.png';
 const ProjectElement = (props)=>{
     var links;
     if(props.GitHubLink != '' && props.Link != '')
-        links= (<span className="ProjectLinks"><a href={props.GitHubLink}><img className="ProjectsIcon" src={githubIcon}></img><section>Github Link</section></a><a href={props.Link}><img className="ProjectsIcon" src={linkIcon}></img><section>Web Link</section></a></span>);
+        links= (<span className="ProjectLinks"><a href={props.GitHubLink}><img className="ProjectsIcon" src={githubIcon}></img><section>Github</section></a><a href={props.Link}><img className="ProjectsIcon" src={linkIcon}></img><section>App</section></a></span>);
     else if(props.GitHubLink != '')
-        links= (<span className="ProjectLinks"><a href={props.GitHubLink}><img className="ProjectsIcon" src={githubIcon}></img><section>Github Link</section></a></span>);
+        links= (<span className="ProjectLinks"><a href={props.GitHubLink}><img className="ProjectsIcon" src={githubIcon}></img><section>Github</section></a></span>);
     else if(props.Link != '')
-        links= (<span className="ProjectLinks"><a href={props.Link}><img className="ProjectsIcon" src={linkIcon}></img><section>Web Link</section></a></span>);
+        links= (<span className="ProjectLinks"><a href={props.Link}><img className="ProjectsIcon" src={linkIcon}></img><section>App</section></a></span>);
     else
         links= (<span className="ProjectLinks"></span>);
     return (

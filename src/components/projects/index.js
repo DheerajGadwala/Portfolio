@@ -7,13 +7,38 @@ const Projects = ()=>{
     const [ret, setRet] = useState(``);
     const [refs, setRefs] = useState(
         [
+            useRef(null), useRef(null), useRef(null),
             useRef(null), useRef(null), useRef(null), 
             useRef(null), useRef(null), useRef(null), 
-            useRef(null), useRef(null), useRef(null), 
+            useRef(null),
         ]
         );
     // add 1 useRef(null) for every project;
     const Projects = [
+        [
+            "Decision Trees on Distributed Systems",
+            "Implemented Decision trees Machine learning algorithm on Distributed systems from scratch. Applied the algorithm to predict the ratings (0 - 4) for large-scale music data, leveraging AWS EC2 clusters.",
+            "",
+            ""
+        ],
+        [
+            "Twitter Sentiment Analysis",
+            "In this project, we train and test a different model such as Support Vector Machine, Decision Trees, K-Nearest Neighbors, Logistic Regression, etc. and compare their performance based on accuracy and choose the best model for the application.",
+            "https://github.com/DheerajGadwala/Sentiment-Analysis-on-Twitter-Data",
+            ""
+        ],
+        [
+            "Checkmate",
+            "Designed, developed, and deployed a game application (Chess) in 5 days as a personal challenge. The application is user-friendly, scalable, and features MVC architecture. It also has sound effects and animations.",
+            "https://github.com/DheerajGadwala/chess",
+            "www.dheerajgadwala.tech/chess"
+        ],
+        [
+            "Dungeon",
+            "A Game developed using Java and the Swing Framework where a player has to find his way out of the dungeon amidst monsters and thieves, his only protection is his trusty bow and his sharp sense of smell and sound.  The player can collect treasure that he may find in various caves in the dungeon and has to kill a monster that is guarding the exit to the dungeon to escape.",
+            "https://github.com/DheerajGadwala/Dungeon",
+            "https://cso-drgad.s3.ap-south-1.amazonaws.com/Dungeon.jar"
+        ],
         [
             "Sorting Visualizer", 
             "A visualization tool for six sorting algorithms {bubble, insertion, selection, merge, heap, and quick sorts} using HTML, CSS and, javascript.", 
@@ -31,24 +56,6 @@ const Projects = ()=>{
             "A DAPP hosted on a private Ethereum network created using Hyperledger Besu. It can be used for authentication and authorization processes in Indian PDSs. For more information, read the github description.",
             "https://github.com/DheerajGadwala/Identify",
             ""
-        ],
-        [
-            "Dungeon",
-            "A command line game where a player can move through a dungeon, which is an implementation of a graph data structure. The dungeon is generated randomly. We use various graph algorithms like Kruskals Algorithm and customized BFS algorithm.",
-            "",
-            ""
-        ],
-        [
-            "Notepad DAPP",
-            "A notepad DAPP that uses reactjs and solidity. It is deployed on Ethereum's kovan test network. Add, move, delete and search for notes.",
-            "https://github.com/DheerajGadwala/Notepad_DAPP",
-            "https://www.dheerajgadwala.tech/Notepad_DAPP/"
-        ],
-        [
-            "Portfolio Website",
-            "Portfolio website using react js.",
-            "https://github.com/DheerajGadwala/PortfolioOld",
-            "https://drgad24.s3.ap-south-1.amazonaws.com/index.html"
         ],
         [
             "Responsive Website building",

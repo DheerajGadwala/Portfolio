@@ -42,9 +42,9 @@ const Navbar = (props)=>{
             document.querySelector('.navitems').classList.add('navitemsProjects');
         }
         else if(window.scrollY>=props.educationRef.current.offsetTop-10){
-            document.querySelector('.navbar').style.background="rgb(150, 53, 8)";
+            document.querySelector('.navbar').style.background="rgb(224, 160, 76)";
             document.querySelector('.navitems').style.color="rgb(255, 255, 255)";
-            document.querySelector('.navitems').style.background="rgba(150, 53, 8, 0.7)";
+            document.querySelector('.navitems').style.background="rgba(224, 160, 76, 0.7)";
             removeOthers();
             document.querySelector('.navitems').classList.add('navitemsEducation');
         }

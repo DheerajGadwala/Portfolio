@@ -13,8 +13,8 @@ const AboutMe = ()=>{
                     About Me
                 </div>
                 <div className="aboutMeText">
-                    I am an industrious individual who is always ready to work in a team. I have a knack for programming and have experiences with various technologies like AI, IoT, ML, cloud, and software development. In the long run, I aim to run my own tech organization.
-                </div>
+                I am an engineer at heart who loves designing, developing, testing, and problem-solving. I am skilled in full-stack web development, algorithms, object-oriented programming, and database management systems.
+               </div>
             </div>
         </div>
     </>);

@@ -11,8 +11,8 @@
   width: 99.5vw;
   background: linear-gradient(
     to bottom,
-    rgb(238, 207, 150),
-    rgb(221, 204, 176)
+    rgb(228, 216, 138),
+    rgb(204, 194, 127)
   );
   overflow-x: hidden;
 }
@@ -37,7 +37,7 @@
   overflow-x: hidden;
 }
 
-/*Staging Area 4 starts here*/
+/*Staging Area 5 starts here*/
 
 .stagingArea5 {
   width: 99.5vw;

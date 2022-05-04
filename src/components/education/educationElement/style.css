@@ -1,5 +1,5 @@
 :root {
-  --shadow: rgb(153, 106, 84);
+  --shadow: rgb(182, 125, 51);
 }
 
 .EducationElement {
@@ -13,8 +13,8 @@
   flex-direction: column;
   background: linear-gradient(
     to bottom right,
-    rgb(150, 53, 8),
-    rgb(214, 94, 39)
+    #F2AA4CFF,
+    rgb(224, 160, 76)
   );
   box-shadow: 1px 1px 0 var(--shadow);
   box-shadow: 2px 2px 0 var(--shadow);
@@ -165,6 +165,6 @@
   .EducationBar {
     width: 75%;
     height: min(2px, 1vh);
-    background-color: rgb(184, 96, 14);
+    background-color: #F4DF4EFF;
   }
 }
